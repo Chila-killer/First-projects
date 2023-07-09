@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+--Lightred: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%);
+
+--Lightslateblue: hsl(252, 100%, 67%);
+--Lightroyalblue: hsl(241, 81%, 54%);
+
+--Violetblue: hsla(256, 72%, 46%, 1);
+--Persianblue: hsla(241, 72%, 46%, 0);
+
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+h2 {
+    line-height: 2.5rem;
+}
+
+p {
+    Font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.continue {
+    background-color: var(--Darkgrayblue);
+    min-width: 315px;
+    min-height: 55px;
+    border-radius: 2rem;
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+    min-width: 262px;
+    min-height: 55px;
+    display: grid;
+    place-content: center;
+
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    max-width: 414px;
+    margin: auto;
+}
+
+.overall {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(0deg, var(--Lightroyalblue), var(--Lightslateblue));
+    display: grid;
+    place-items: center;
+    gap: 1.5rem;
+    color: white;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    max-width: 350px;
+}
+
+.overall > span {
+    background: linear-gradient(0deg, var(--Persianblue), var(--Violetblue));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    min-height: 130px;
+
+}
+
+.span-p {
+    opacity: 0.5;
+    font-size: small;
+}
+
+.text {
+    display: grid;
+    place-items: center;
+    padding: 0 2rem;
+}
+
+.result {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-width: 350px;
+    gap: 1rem;
+    position: relative;
+}
+
+.result > span {
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    min-height: 50px;
+    justify-content: space-between;
+}
+
+.span-background {
+    position: absolute;
+    min-width: 320px;
+    min-height: 50px;
+    border-radius: 0.5rem;
+}
+
+.first {
+    background-color: var(--Lightred);
+    opacity: 0.1;
+}
+
+.span-p-1 {
+    color: var(--Lightred);
+}
+
+.second {
+    background-color: var(--Orangeyyellow);
+    opacity: 0.1;
+}
+
+.span-p-2 {
+    color: var(--Orangeyyellow);
+}
+
+.third {
+    background-color: var(--Greenteal);
+    opacity: 0.1;
+}
+
+.span-p-3 {
+    color: var(--Greenteal);
+}
+
+.fourth {
+    background-color: var(--Cobaltblue);
+    opacity: 0.1;
+}
+
+.span-p-4 {
+    color: var(--Cobaltblue);
+}
+
+.score {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1rem;
+}
+
+.score > p {
+    font-weight: bold;
+}
+
+.score-name {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.score-base {
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.continue-button {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+@media (min-width: 1440px) {
+    h2 {
+        padding-bottom: 0.5rem;
+    }
+
+    .container {
+        height: 100vh;
+        min-width: 100vh;
+    }
+
+    .module {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        box-shadow: 10px 10px 10px var(--Paleblue);
+    }
+    
+    .overall {
+        border-radius: 2rem;
+        min-width: 310px;
+        width: 310px;
+        gap: 0;
+    }
+
+    .summary {
+        min-width: 310px;
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .span-background {
+        min-width: calc(310px - 3rem);
+        margin: 0 auto;
+    }
+
+    .result > span {
+        min-width: calc(310px - 3rem);
+        margin: 0 5px;
+    }
+
+    button {
+        min-width: calc(310px - 3rem);
+    }
+
+    .continue-button {
+        margin: 0 auto;
+    } 
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkblue: hsl(217, 54%, 11%);
+    --Verydarkblue1: hsl(216, 50%, 16%);
+    --Verydarkblue2: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #0d1a2d;
+    color: var(--White);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 18px;
+}
+
+.module {
+    background-color: #15273f;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 350px;
+    min-height: 600px;
+}
+
+img {
+    border-radius: 0.5rem;
+    max-width: 300px;
+    cursor: pointer;
+    z-index: 2;
+    transition: opacity 0.5s;
+}
+
+.eye {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    transition: z-index 0.2s;
+}
+
+.image {
+    justify-content: center;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.background {
+    background-color: var(--Cyan);
+    border-radius: 0.6rem;
+    min-height: 300px;
+    min-width: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+.image:hover img {
+    opacity: 0.5;
+}
+
+.image:hover .eye {
+    z-index: 3;
+}
+
+h2 {
+    max-width: fit-content;
+    letter-spacing: 0.5px;
+    margin: 8px 0px 0px 0px;
+    font-size: 21px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    font-weight: 100;
+    font-size: 19px;
+    color: #92a5c3;
+}
+
+.spans {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.spans > span:nth-child(1) {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.spans > span:nth-child(2) {
+    color: #92a5c3;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.line-1 {
+    height: 1px;
+    background: #3b4a5e;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar > img {
+    max-inline-size: 33px;
+    border: white solid 1px;
+    border-radius: 50%;
+}
+
+.avatar > div {
+    display: flex;
+}
+
+.creator {
+    gap: 5px;
+}
+
+.creator > p {
+    font-size: medium;
+}
+
+.creator > p:nth-child(2) {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.creator > p:nth-child(2):hover {
+    color: hsl(178, 100%, 50%);
+}
